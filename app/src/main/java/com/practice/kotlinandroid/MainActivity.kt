@@ -9,8 +9,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 val MainActivity.tv2: TextView
     get() = findViewById(R.id.tv)
-var HAHA: String
+var HAHA: String = ""
     set(value) {
+        field = value
         Log.e("TAG", value)
     }
     get() = "hello"
